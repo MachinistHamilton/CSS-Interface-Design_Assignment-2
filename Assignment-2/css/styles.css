@@ -1,0 +1,359 @@
+/*------------------------ Initial Styles -----------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font */
+@font-face {
+  font-family: "yellowRabit";
+  src: url("../fonts/YellowRabbit.otf");
+  font-weight: normal; /* Corrected */
+}
+/* Body Background - Faded black*/
+body {
+  background: rgba(10, 10, 10, 0.96);
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+/*Largest text*/
+h1 {
+  font-family: "", "Grenze Gotisch", "sans-serif";
+  text-shadow: 1px 0 0 rgb(2, 2, 2), 0 5px 0 rgb(2, 2, 2), -5px 0 0 rgb(2, 2, 2), 0 -3px 0 rgb(2, 2, 2);
+}
+/*smaller Large text*/
+h2, h3, h4, h5, h6 {
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+/*Small text*/
+p, li, a {
+  font-family: "Roboto", "sans-serif";
+  text-decoration: none;
+  font-size: 1.2em; /*20px*/
+}
+
+
+
+/*------------------------------------ Header ------------------------- */
+header {
+  display: flex; /* Corrected */
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  z-index: 20;
+}
+
+/*Header Div Container*/
+header div {
+  flex-grow: 1;
+  height: 115px;
+  width: auto;
+}
+
+/* header Menu*/
+header menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+/* LOGO */
+header #logo {
+  height: 75%;
+}
+
+/*Header Menu List*/
+header menu li {
+  list-style: none;
+  margin-left: 50px;
+}
+
+/*Header Menu List items*/
+header menu li a {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 2.2em;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+  text-shadow: 1px 0 0 rgb(2, 2, 2), 0 5px 0 rgb(2, 2, 2), -5px 0 0 rgb(2, 2, 2), 0 -3px 0 rgb(2, 2, 2);
+}
+
+/* Menu Item Hover Effect*/
+header menu li a:hover {
+  background: #ffffff50;
+  color: #111;
+  text-shadow: 1px 0 0 rgb(255, 255, 255), 0 5px 0 rgb(208, 208, 208), -5px 0 0 rgb(237, 237, 237), 0 -3px 0 rgb(223, 223, 223);
+}
+
+/*------------------------------------ Adjust for different Screen sizes --------------------------*/
+/* Small*/
+@media screen and (max-width: 1300px) {
+  header #logo {
+    height: 340px;
+    transition: 2.5s;
+  }
+  header menu li {
+    font-size: 1.5em;
+  }
+}
+
+/*Medium*/
+@media screen and (max-width: 750px) {
+  header #logo {
+    height: 140px;
+    transition: 1.5s;
+    margin: 10px;
+  }
+  header menu li {
+    font-size: 1.0em;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/*Large*/
+@media screen and (min-width: 1300px) {
+  header #logo {
+    height: 550px;
+    transition: 1.5s;
+  }
+  header menu li {
+    font-size: 2.5em;
+  }
+}
+
+/*----------------------------- PARALAX SECTIONS---------------------- */
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+  
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #111, transparent);
+  z-index: 999999;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section img#stars {
+  /* Change color shades using filter */
+  filter: hue-rotate(180deg) brightness(0.7) contrast(1.5);
+}
+
+section img#lemmy {
+  mix-blend-mode: screen;
+  transform: translateY(-15%);
+}
+
+section img#city {
+  mix-blend-mode: screen;
+}
+
+section img#crowd {
+  z-index: 10;
+  transform: translateY(5%);
+}
+/* Paralax Banner Text*/
+#text {
+position: absolute;
+right: -1250px;
+color: #fff;
+white-space: nowrap;
+font-size: 7.5vw;
+z-index: 9;
+transform: translateY(-110px);
+}
+
+/*  -------------------- Paragraph Text Areas --------------------- */
+/* Text Effects*/
+.sec {
+position: relative;
+padding: 100px;
+background: #111;
+}
+
+.sec h2 {
+font-size: 3.5em;
+margin-bottom: 10px;
+color: #fff;
+}
+
+.sec p {
+font-size: 1em;
+color: #fff;
+}
+/*--------------------------------- Paragraph 1 Area ----------------------*/
+/*In Class Lesson*/
+.lesson-row-one {
+  height: 1150px;
+  background-color: #111;
+  background-image: url("../img/band.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lesson-row-one div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  line-height: 2,0;
+  
+  background-color: rgba(48, 48, 48, 0.8);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* for assignment 2 */
+.lesson-row-one h2 {
+  font-size: 4.5em;
+  margin-bottom: 15px;
+  text-shadow: 1px 0 0 rgb(2, 2, 2), 0 5px 0 rgb(2, 2, 2), -5px 0 0 rgb(2, 2, 2), 0 -3px 0 rgb(2, 2, 2);
+}
+
+/*-------------------------------------- Paragraph 2 Area ---------------------------*/
+.lesson-row-two{
+  color: #fff;
+  height: 2750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* for assignment 2 */
+.lesson-row-two h3 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+/* Paragrapgh 2 Large text*/
+.lesson-row-two h3 span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/*Paragraph 2 first letter*/
+.lesson-row-two p:first-letter {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.5em;
+}
+/*Paragrapgh 2 span*/
+.lesson-row-two p span{
+  font-size: 2.0em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+/*---------------- Song Lyrics -----------------*/
+.lyrics {
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.15;
+}
+
+
+.lyrics .large {
+  font-weight: bold;
+  font-style: italic;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+
+.lyrics .largest {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+
+.lyrics .highlight {
+  font-size: 2.2em;
+  font-style: italic;
+  color: #ffbf00;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+.lyrics .joker {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: red;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+.underline {
+  text-decoration: underline;
+  font-family: "", "Grenze Gotisch", "sans-serif";
+}
+
+
+
+/*----------------------- YOUTUBE i-frame video ----------------------------*/
+#iframe { 
+  position: absolute;
+  float: left;
+  clear: both;
+  width: 900px;
+  height: 450px;
+  z-index: 0;
+}
+
+
+  
+/*---------------------------------- Footer ------------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #111;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Roboto", "sans-serif";
+}
