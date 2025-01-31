@@ -35,8 +35,6 @@ p, li, a {
   font-size: 1.2em; /*20px*/
 }
 
-
-
 /*------------------------------------ Header ------------------------- */
 header {
   display: flex; /* Corrected */
