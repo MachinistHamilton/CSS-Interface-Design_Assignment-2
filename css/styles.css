@@ -9,6 +9,7 @@ html {
   src: url("../fonts/YellowRabbit.otf");
   font-weight: normal; /* Corrected */
 }
+
 /* Body Background - Faded black*/
 body {
   background: rgba(10, 10, 10, 0.96);
@@ -18,11 +19,13 @@ body {
   background-position: center;
   background-size: cover;
   }
+
 /*Largest text*/
 h1 {
   font-family: "", "Grenze Gotisch", "sans-serif";
   text-shadow: 1px 0 0 rgb(2, 2, 2), 0 5px 0 rgb(2, 2, 2), -5px 0 0 rgb(2, 2, 2), 0 -3px 0 rgb(2, 2, 2);
 }
+
 /*smaller Large text*/
 h2, h3, h4, h5, h6 {
   font-family: "", "Grenze Gotisch", "sans-serif";
@@ -210,7 +213,7 @@ color: #fff;
 }
 /*--------------------------------- Paragraph 1 Area ----------------------*/
 /*In Class Lesson*/
-.lesson-row-one {
+.container-row-one {
   height: 1150px;
   background-color: #111;
   background-image: url("../img/band.jpg");
@@ -222,7 +225,7 @@ color: #fff;
   box-sizing: border-box;
 }
 
-.lesson-row-one div {
+.container-row-one div {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -240,14 +243,14 @@ color: #fff;
 }
 
 /* for assignment 2 */
-.lesson-row-one h2 {
+.container-row-one h2 {
   font-size: 4.5em;
   margin-bottom: 15px;
   text-shadow: 1px 0 0 rgb(2, 2, 2), 0 5px 0 rgb(2, 2, 2), -5px 0 0 rgb(2, 2, 2), 0 -3px 0 rgb(2, 2, 2);
 }
 
 /*-------------------------------------- Paragraph 2 Area ---------------------------*/
-.lesson-row-two{
+.container-row-two{
   color: #fff;
   height: 2750px;
   display: flex;
@@ -264,23 +267,23 @@ color: #fff;
 }
 
 /* for assignment 2 */
-.lesson-row-two h3 {
+.container-row-two h3 {
   font-size: 2.5em;
   margin-bottom: 15px;
 }
 /* Paragrapgh 2 Large text*/
-.lesson-row-two h3 span {
+.container-row-two h3 span {
   font-size: 1.2em;
   font-weight: bold;
 }
 /*Paragraph 2 first letter*/
-.lesson-row-two p:first-letter {
+.container-row-two p:first-letter {
   font-weight: 900;
   font-style: italic;
   font-size: 1.5em;
 }
 /*Paragrapgh 2 span*/
-.lesson-row-two p span{
+.container-row-two p span{
   font-size: 2.0em;
   font-weight: bold;
   font-style: italic;
@@ -295,14 +298,14 @@ color: #fff;
   line-height: 1.15;
 }
 
-
+/* lyrics large */
 .lyrics .large {
   font-weight: bold;
   font-style: italic;
   font-family: "", "Grenze Gotisch", "sans-serif";
 }
 
-
+/*Lyrics Largest*/
 .lyrics .largest {
   font-size: 3em;
   font-weight: bold;
