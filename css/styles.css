@@ -212,14 +212,13 @@ font-size: 1em;
 color: #fff;
 }
 /*--------------------------------- Paragraph 1 Area ----------------------*/
-/*In Class Lesson*/
 .container-row-one {
   height: 1150px;
   background-color: #111;
   background-image: url("../img/band.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-repeat: no-repeat; 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
